@@ -14,6 +14,11 @@ DPO: [https://huggingface.co/ishasinha1/Qwen3-0.6B-DPO-Safety](url)
 
 SFT: [https://huggingface.co/ishasinha1/Qwen3-0.6B-SFT-Safety
 ](url)
+
+## General Capabilities Notebook
+
+We evaluate the models on the MMLU dataset's test split (~14k general examples of multiple-choice questions) to confirm that fine-tuning on safety data has not degraded general model capabilities. The notebook for this is `General_Capabilities.ipynb`. The results can be found in the final paper.
+
 ## Evaluation Notebook
 
 The resulting models are evaluated against the base model in the notebook: `CS329R_Evaluation.ipynb`. We run inference to generate responses to test data, and then extract evaluation metrics from a pre-trained classifier and a reward model. These metrics are included for each prompt, and saved to a JSON file for each model per bias type (racial, gender). 
