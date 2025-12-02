@@ -17,7 +17,9 @@ SFT: [https://huggingface.co/ishasinha1/Qwen3-0.6B-SFT-Safety
 
 ## General Capabilities Notebook
 
-We evaluate the models on the MMLU dataset's test split (~14k general examples of multiple-choice questions) to confirm that fine-tuning on safety data has not degraded general model capabilities. The notebook for this is `General_Capabilities.ipynb`. The results can be found in the final paper.
+We evaluate the models on the MMLU dataset's test split (~14k general examples of multiple-choice questions) to confirm that fine-tuning on safety data has not degraded general model capabilities. The notebook for this is `General_Capabilities.ipynb`.  _Remember to modify the filepath!_
+
+The results can be found in the final paper.
 
 ## Evaluation Notebook
 
@@ -27,7 +29,7 @@ These results can be used to simply get the mean reward model score and the mean
 
 ## Running the Notebooks
 
-Both notebooks are run using an NVIDIA A100 GPU on Google Colab Pro. They require CUDA kernels.
+All notebooks are run using an NVIDIA A100 GPU on Google Colab Pro. They require CUDA kernels.
 
 ## Results
 The model responses to test data and the evaluation metrics for each response can be found in JSON files in the folder "Model Responses + Scores". The files are named as: `<model_type>_<bias_type>_response_scores.json`. 
