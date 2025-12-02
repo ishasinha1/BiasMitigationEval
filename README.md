@@ -8,6 +8,12 @@ This paper seeks to build on this work by analysing how different post-training 
 
 We fine-tune the model using SFT and DPO through a LoRA adapter, on the Anthropic/hh-rlhf dataset. The notebook where data is prepared, and training takes place is: `CS329R_DPO_SFT.ipynb`.
 
+The trained models can be found on HuggingFace:
+
+DPO: [https://huggingface.co/ishasinha1/Qwen3-0.6B-DPO-Safety](url)
+
+SFT: [https://huggingface.co/ishasinha1/Qwen3-0.6B-SFT-Safety
+](url)
 ## Evaluation Notebook
 
 The resulting models are evaluated against the base model in the notebook: `CS329R_Evaluation.ipynb`. We run inference to generate responses to test data, and then extract evaluation metrics from a pre-trained classifier and a reward model. These metrics are included for each prompt, and saved to a JSON file for each model per bias type (racial, gender). 
